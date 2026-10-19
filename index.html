@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Professional software developer portfolio." />
+
+  <title>Developer Portfolio</title>
+
+  <!-- Bootstrap (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Background effects -->
+  <div class="bg-glow" aria-hidden="true"></div>
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#top">
+            <span class="brand-dot">●</span> Okere Emmanuel Obinna
+          </a>
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+
+            <a class="wa-button" href="https://wa.me/2347089194563" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="bi bi-whatsapp"></i><span>Chat on WhatsApp</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main id="top" class="pt-5 mt-5">
+    <!-- Hero -->
+    <section class="hero d-flex align-items-center" id="home">
+      <div class="container position-relative">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <div class="hero-badge d-inline-flex align-items-center gap-2">
+              <span class="badge badge-pill">Available</span>
+              <span class="small text-white-50">Building performant web apps & APIs</span>
+            </div>
+
+            <h1 class="hero-title mt-3">
+              Hi, I’m <span class="text-gradient">Okere Emmanuel Obinna</span>.
+              <br />
+              <span id="typedRole" class="typed-text"></span>
+            </h1>
+
+
+            <p class="hero-subtitle text-white-50 mt-3">
+              I’m a professional software developer specializing in modern front-end and back-end systems.
+              I craft clean, scalable code with delightful user experiences.
+            </p>
+
+            <div class="hero-cta d-flex flex-wrap gap-2 mt-4">
+              <a class="btn btn-primary" href="#projects"><i class="bi bi-lightning-charge"></i> View Projects</a>
+              <a class="btn btn-outline-light" href="#contact"><i class="bi bi-chat-dots"></i> Get in touch</a>
+            </div>
+
+            <div class="hero-stats row g-3 mt-5">
+              <div class="col-6 col-md-3">
+                <div class="stat-card">
+                  <div class="stat-number" data-counter="120">0</div>
+                  <div class="stat-label">Projects shipped</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-card">
+                  <div class="stat-number" data-counter="8">0</div>
+                  <div class="stat-label">Years exp</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-card">
+                  <div class="stat-number" data-counter="24">0</div>
+                  <div class="stat-label">Technologies</div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="stat-card">
+                  <div class="stat-number" data-counter="99">0</div>
+                  <div class="stat-label">Client satisfaction</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="hero-panel">
+              <div class="hero-panel-header d-flex align-items-center justify-content-between">
+                <span class="text-white-50 small">Quick Profile</span>
+                <span class="status-pill"><i class="bi bi-circle-fill"></i> Online</span>
+              </div>
+
+              <div class="hero-panel-body">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="avatar" aria-hidden="true">
+                    <img src="img/profile.PNG" alt="Passport photo" class="avatar-img" />
+                  </div>
+                  <div>
+                    <div class="fw-bold">Okere Emmanuel Obinna</div>
+                    <div class="text-white-50 small">Full-Stack Software Developer</div>
+
+                  </div>
+                </div>
+
+                <hr class="divider" />
+
+                <div class="profile-grid">
+                  <div class="profile-item"><i class="bi bi-geo-alt"></i><span>Aba, Abia State, Nigeria</span></div>
+
+                  <div class="profile-item"><i class="bi bi-briefcase"></i><span>Full-time / Freelance</span></div>
+                  <div class="profile-item"><i class="bi bi-cpu"></i><span>Web, APIs, Performance</span></div>
+                </div>
+
+                <div class="mt-4 d-grid gap-2">
+                  <a class="btn btn-outline-light" href="#skills"><i class="bi bi-diagram-3"></i> Explore Skills</a>
+                  <a class="btn btn-primary" href="#contact"><i class="bi bi-file-earmark-person"></i> Download CV</a>
+                  <div class="small text-white-50">(Add your CV file/link later)</div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 text-white-50 small">
+              <i class="bi bi-shield-check"></i> Built for speed, accessibility, and mobile-first responsiveness.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">About</h2>
+          <p class="section-subtitle text-white-50 mb-0">A short story about how I build.</p>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-lg-6 reveal">
+            <div class="card-modern h-100">
+              <div class="card-modern-body">
+                <h3 class="h4 mb-3">About Me</h3>
+                <p class="text-white-50 mb-0">
+                  Hi, I’m <b>Okere Emmanuel Obinna</b> — a Full-Stack Software Developer based in Aba, Abia State, Nigeria.
+                  I’m a Computer Science graduate from the Air Force Institute of Technology, Kaduna, with a BSc earned between 2019 and 2024.
+                  I build web applications that are fast, responsive, and easy to maintain, with a strong focus on both front-end and back-end development.
+                </p>
+
+
+                <div class="mt-4 d-flex flex-wrap gap-2">
+                  <span class="chip">Clean code</span>
+                  <span class="chip">APIs</span>
+                  <span class="chip">Performance</span>
+                  <span class="chip">UX</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="card-modern h-100">
+              <div class="card-modern-body">
+                <h3 class="h4 mb-3">What you can expect</h3>
+
+                <div class="accordion" id="expectAccordion">
+                  <div class="accordion-item bg-transparent border border-white/10 rounded-3">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Fast iteration
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#expectAccordion">
+                      <div class="accordion-body text-white-50">
+                        I ship frequently, validate early, and keep momentum.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item bg-transparent border border-white/10 rounded-3 mt-2">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Maintainable architecture
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#expectAccordion">
+                      <div class="accordion-body text-white-50">
+                        Separation of concerns, consistent patterns, and clear documentation.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item bg-transparent border border-white/10 rounded-3 mt-2">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        A polished UI
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#expectAccordion">
+                      <div class="accordion-body text-white-50">
+                        Micro-interactions, responsive layouts, and accessibility by default.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-4 d-flex gap-3 align-items-center">
+                  <div class="pulse-ring" aria-hidden="true"></div>
+                  <div>
+                    <div class="fw-bold">Let’s build something great.</div>
+                    <div class="text-white-50 small">Message me and I’ll respond quickly.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle text-white-50 mb-0">A focused toolkit for shipping real products.</p>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-lg-5 reveal">
+            <div class="card-modern">
+              <div class="card-modern-body">
+                <h3 class="h4 mb-3">Core strengths</h3>
+
+                <div class="skill-list" id="skillList">
+                  <div class="skill-row" tabindex="0" role="button" data-skill="Front-end Engineering">
+                    <div class="skill-name"><i class="bi bi-window-stack"></i> Front-end Engineering</div>
+                    <div class="skill-meter"><span style="width: 92%" data-meter="92"></span></div>
+                  </div>
+                  <div class="skill-row" tabindex="0" role="button" data-skill="Back-end & APIs">
+                    <div class="skill-name"><i class="bi bi-diagram-3"></i> Back-end & APIs</div>
+                    <div class="skill-meter"><span style="width: 88%" data-meter="88"></span></div>
+                  </div>
+                  <div class="skill-row" tabindex="0" role="button" data-skill="Performance & Reliability">
+                    <div class="skill-name"><i class="bi bi-speedometer2"></i> Performance & Reliability</div>
+                    <div class="skill-meter"><span style="width: 85%" data-meter="85"></span></div>
+                  </div>
+                  <div class="skill-row" tabindex="0" role="button" data-skill="Architecture & Testing">
+                    <div class="skill-name"><i class="bi bi-kanban"></i> Architecture & Testing</div>
+                    <div class="skill-meter"><span style="width: 82%" data-meter="82"></span></div>
+                  </div>
+                </div>
+
+                <div class="mt-3 text-white-50 small">
+                  Click a row to highlight matching project tags.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7 reveal">
+            <div class="card-modern h-100">
+              <div class="card-modern-body">
+                <div class="d-flex align-items-center justify-content-between gap-3 flex-wrap">
+                  <h3 class="h4 mb-0">Tech stack</h3>
+                  <div class="small text-white-50" id="activeSkillLabel">Selected: None</div>
+                </div>
+
+                <div class="tag-cloud mt-4" id="tagCloud" aria-label="Technology tags">
+                  <button class="tag" data-tag="frontend">HTML/CSS</button>
+                  <button class="tag" data-tag="frontend">JavaScript</button>
+                  <button class="tag" data-tag="frontend">TypeScript</button>
+                  <button class="tag" data-tag="backend">Node.js</button>
+                  <button class="tag" data-tag="backend">REST APIs</button>
+                  <button class="tag" data-tag="backend">SQL</button>
+                  <button class="tag" data-tag="frontend">React</button>
+                  <button class="tag" data-tag="backend">Databases</button>
+                  <button class="tag" data-tag="testing">Testing</button>
+                  <button class="tag" data-tag="frontend">UI/UX</button>
+                  <button class="tag" data-tag="performance">Performance</button>
+                  <button class="tag" data-tag="testing">CI/CD</button>
+                </div>
+
+                <div class="mt-4">
+                  <div class="progress-row">
+                    <div class="progress-label">Overall delivery</div>
+                    <div class="progress" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar progress-bar-striped" style="width: 94%"></div>
+                    </div>
+                  </div>
+
+                  <div class="progress-row">
+                    <div class="progress-label">Code quality</div>
+                    <div class="progress" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar progress-bar-striped" style="width: 91%"></div>
+                    </div>
+                  </div>
+
+                  <div class="progress-row">
+                    <div class="progress-label">Performance mindset</div>
+                    <div class="progress" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar progress-bar-striped" style="width: 88%"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle text-white-50 mb-0">Filter by focus area. Open a project for details.</p>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-lg-4 reveal">
+            <div class="card-modern">
+              <div class="card-modern-body">
+                <h3 class="h4 mb-3">Filter</h3>
+                <div class="filter-buttons" role="group" aria-label="Project filter">
+                  <button class="filter-btn active" data-filter="all">All</button>
+                  <button class="filter-btn" data-filter="frontend">Front-end</button>
+                  <button class="filter-btn" data-filter="backend">Back-end</button>
+                  <button class="filter-btn" data-filter="performance">Performance</button>
+                  <button class="filter-btn" data-filter="testing">Testing</button>
+                </div>
+
+                <div class="mt-4 text-white-50 small">
+                  Tip: click skill rows to auto-filter tags.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8 reveal">
+            <div class="card-modern">
+              <div class="card-modern-body">
+                <div class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
+                  <h3 class="h4 mb-0">Featured work</h3>
+                  <div class="small text-white-50" id="projectCount">0 projects</div>
+                </div>
+
+                <div class="project-grid mt-4" id="projectGrid">
+                  <!-- Cards injected by JS -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-subtitle text-white-50 mb-0">Timeline of roles and impact.</p>
+        </div>
+
+        <div class="timeline mt-4">
+          <div class="timeline-item reveal">
+            <div class="timeline-badge"><i class="bi bi-briefcase"></i></div>
+            <div class="timeline-content">
+              <div class="d-flex flex-wrap justify-content-between gap-2">
+                <div>
+                  <div class="fw-bold">ICT Manager</div>
+                  <div class="text-white-50 small">Talrossconcept Nigeria Limited</div>
+                </div>
+                <div class="small text-white-50">Abuja, F.C.T.</div>
+              </div>
+              <ul class="timeline-list text-white-50 mb-0">
+                <li>Handle web development, system maintenance, and IT solutions that support business operations.</li>
+                <li>Manage projects end-to-end and deliver solutions that work in real business environments.</li>
+                <li>Strengthen my ability to deliver reliable, maintainable software for day-to-day operations.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-badge"><i class="bi bi-mortarboard"></i></div>
+            <div class="timeline-content">
+              <div class="d-flex flex-wrap justify-content-between gap-2">
+                <div>
+                  <div class="fw-bold">B.Sc. Computer Science</div>
+                  <div class="text-white-50 small">Air Force Institute of Technology, Kaduna (2019 - 2024)</div>
+                </div>
+                <div class="small text-white-50">Education</div>
+              </div>
+              <ul class="timeline-list text-white-50 mb-0">
+                <li>Focused on algorithms, systems, and software engineering fundamentals.</li>
+                <li>Developed strong foundations for full-stack development and practical application logic.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle text-white-50 mb-0">Let’s talk about your next product.</p>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-lg-5 reveal">
+            <div class="card-modern h-100">
+              <div class="card-modern-body">
+                <h3 class="h4">Contact</h3>
+                <p class="text-white-50">I’m open to freelance projects, full-time roles, and collaborations. Get in touch and I’ll respond quickly.</p>
+
+                <div class="mt-4">
+                  <div class="contact-item"><i class="bi bi-envelope"></i><span>okereemmanuelobinna02@gmail.com</span></div>
+                  <div class="contact-item"><i class="bi bi-telephone"></i><span>07089194563</span></div>
+                  <div class="contact-item"><i class="bi bi-geo-alt"></i><span>Aba, Abia State, Nigeria</span></div>
+                </div>
+
+
+                <div class="mt-4 d-flex gap-2 flex-wrap">
+                  <a class="social" href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                  <a class="social" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a class="social" href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                  <a class="social" href="#" aria-label="Website"><i class="bi bi-globe"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7 reveal">
+            <div class="card-modern h-100">
+              <div class="card-modern-body">
+                <form id="contactForm" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label text-white-50" for="name">Name</label>
+                      <input id="name" name="name" type="text" class="form-control bg-dark text-white border-white/10" placeholder="Your name" required>
+                      <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label text-white-50" for="email">Email</label>
+                      <input id="email" name="email" type="email" class="form-control bg-dark text-white border-white/10" placeholder="you@example.com" required>
+                      <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label text-white-50" for="subject">Subject</label>
+                      <input id="subject" name="subject" type="text" class="form-control bg-dark text-white border-white/10" placeholder="Project inquiry" required>
+                      <div class="invalid-feedback">Please enter a subject.</div>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label text-white-50" for="message">Message</label>
+                      <textarea id="message" name="message" class="form-control bg-dark text-white border-white/10" rows="5" placeholder="Tell me more..." required></textarea>
+                      <div class="invalid-feedback">Please enter a message.</div>
+                    </div>
+
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary px-4">
+                        <i class="bi bi-send"></i> Send Message
+                      </button>
+                      <div class="small text-white-50 mt-2" id="formStatus" role="status" aria-live="polite"></div>
+                    </div>
+                  </div>
+                </form>
+
+                <div class="mt-4 text-white-50 small">
+                  Note: Submitting opens your email client with the message details.
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+          <div class="text-white-50 small">© <span id="year"></span> Okere Emmanuel Obinna. All rights reserved.</div>
+
+          <div class="d-flex gap-3">
+            <a class="text-white-50 small" href="#about">About</a>
+            <a class="text-white-50 small" href="#projects">Projects</a>
+            <a class="text-white-50 small" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Floating WhatsApp button -->
+  <a class="wa-float" href="https://wa.me/2347089194563" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <span class="wa-float__pulse" aria-hidden="true"></span>
+    <span class="wa-float__bubble" aria-hidden="true"></span>
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- Project modal -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-white border border-white/10">
+        <div class="modal-header border-white/10">
+          <h5 class="modal-title" id="projectModalLabel">Project</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex flex-column gap-3">
+            <div>
+              <div class="text-white-50 small" id="projectModalMeta"></div>
+            </div>
+            <p class="text-white-50" id="projectModalDesc"></p>
+            <div class="modal-tags" id="projectModalTags"></div>
+            <div class="modal-actions d-flex gap-2 flex-wrap">
+              <a class="btn btn-primary" id="projectModalLive" href="#" target="_blank" rel="noopener">Live</a>
+              <a class="btn btn-outline-light" id="projectModalRepo" href="#" target="_blank" rel="noopener">Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/app.js"></script>
+</body>
+</html>
+
